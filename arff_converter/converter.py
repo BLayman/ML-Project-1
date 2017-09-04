@@ -16,7 +16,7 @@ class Converter():
 
     def process_relation(self):
         self.arff_relation()
-    
+
     def process_attributes(self):
         with open(self.attribute_file) as f:
             for line in f:
@@ -68,5 +68,5 @@ class Converter():
             self.att[r][0] = self.att[r][0].replace(" ", "_")
 
 if __name__ == "__main__":
-    converter = Converter('data.csv', 'attributes.csv')
+    converter = Converter('fertility_data.txt', 'fertility_att.csv')
     converter.convert()
