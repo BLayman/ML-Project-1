@@ -22,4 +22,4 @@
 "US22","numeric"
 "US23","numeric"
 "US24","numeric"
-"Class","{Move-Forward&Slight-Right-Turn&Sharp-Right_Turn&Slight-Left-Turn}"
+"move","{Move-Forward&Slight-Right-Turn&Sharp-Right-Turn&Slight-Left-Turn}"

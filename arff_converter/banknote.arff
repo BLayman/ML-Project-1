@@ -4,7 +4,7 @@
 @attribute skewness_of_Wavelet_Transformed_image numeric
 @attribute curtosis_of_Wavelet_Transformed_image numeric
 @attribute entropy_of_image numeric
-@attribute class numeric
+@attribute class {0,1}
 
 @data
 3.6216,8.6661,-2.8073,-0.44699,0

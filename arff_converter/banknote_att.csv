@@ -2,4 +2,4 @@
 "skewness of Wavelet Transformed image","numeric"
 "curtosis of Wavelet Transformed image,"numeric"
 "entropy of image","numeric"
-"class","numeric"
+"class","{0&1}"

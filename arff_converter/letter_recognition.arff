@@ -1,6 +1,6 @@
 @relation goes_here
 
-@attribute lettr numeric
+@attribute lettr {A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z}
 @attribute x-box numeric
 @attribute y-box numeric
 @attribute width numeric
