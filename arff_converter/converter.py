@@ -29,6 +29,9 @@ class Converter():
         with open(self.data_file) as f:
             for line in f:
                 line = line.split(',')
+                if not len(line) > 1:
+                    line = ''.join(line)
+                    line = line.split(' ')
                 self.data.append(line)
         self.arff_data()
 
@@ -44,12 +47,12 @@ class Converter():
                 arff.write("@attribute %s %s\n" % (self.att[r][0], self.att[r][1]))
             else:
                 if self.att[r][1][:1] == '{': # This is a nominal-specification
-                    self.att[r][1].replace('&', ',')
                     arff.write("@attribute %s %s\n" % (self.att[r][0], self.att[r][1].replace('&', ',')))
                 else: # This is a date
                     arff.write("@attribute %s %s\n" % (self.att[r][0], self.att[r][1]))
         arff.write("\n")
         arff.close()
+
 
     def arff_data(self):
         arff = open('data.arff', 'a')
@@ -57,6 +60,7 @@ class Converter():
         for r in range(len(self.data)):
             arff.write(','.join(self.data[r]))
         arff.close()
+
 
     def trim_attributes(self):
         for r in range(len(self.att)):
@@ -68,5 +72,5 @@ class Converter():
             self.att[r][0] = self.att[r][0].replace(" ", "_")
 
 if __name__ == "__main__":
-    converter = Converter('heart_data.txt', 'heart_att.txt')
+    converter = Converter('heart/heart_data.txt', 'heart/heart_att.txt')
     converter.convert()
