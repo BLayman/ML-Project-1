@@ -1,4 +1,4 @@
-@relation goes_here
+@relation banknote
 
 @attribute variance_of_Wavelet_Transformed_image numeric
 @attribute skewness_of_Wavelet_Transformed_image numeric

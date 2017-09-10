@@ -1,4 +1,4 @@
-@relation goes_here
+@relation mushroom_toxicity
 
 @attribute cap-shape {b,c,x,f,k,s}
 @attribute cap-surface {f,g,y,s}

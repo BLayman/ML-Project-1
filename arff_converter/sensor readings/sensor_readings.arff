@@ -1,4 +1,4 @@
-@relation goes_here
+@relation sensor_readings
 
 @attribute US1 numeric
 @attribute US2 numeric
