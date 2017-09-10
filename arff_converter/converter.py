@@ -68,5 +68,5 @@ class Converter():
             self.att[r][0] = self.att[r][0].replace(" ", "_")
 
 if __name__ == "__main__":
-    converter = Converter('fertility_data.txt', 'fertility_att.csv')
+    converter = Converter('heart_data.txt', 'heart_att.txt')
     converter.convert()
