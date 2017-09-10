@@ -1,18 +1,18 @@
 @relation goes_here
 
 @attribute age numeric
-@attribute sex {0,1}
-@attribute chest {1,2,3,4}
+@attribute sex {0.0,1.0}
+@attribute chest numeric
 @attribute resting_blood_pressure numeric
 @attribute serum_cholestoral_in_mg/dl numeric
-@attribute fasting_blood_sugar_>_120_mg/dl {0,1}
-@attribute resting_electrocardiographic_results {0,1,2}
+@attribute fasting_blood_sugar_>_120_mg/dl {0.0,1.0}
+@attribute resting_electrocardiographic_results {0.0,1.0,2.0}
 @attribute maximum_heart_rate_achieved numeric
-@attribute exercise_induced_angina {0,1}
+@attribute exercise_induced_angina {0.0,1.0}
 @attribute ST_depression_induced_by_exercise_relative_to_rest numeric
-@attribute the_slope_of_the_peak_exercise_ST_segment {1,2,3}
-@attribute number_of_major_vessels_colored_by_flourosopy {0,1,2,3}
-@attribute thal:_normal;_fixed_defect;_reversable_defect {3,6,7}
+@attribute the_slope_of_the_peak_exercise_ST_segment {1.0,2.0,3.0}
+@attribute number_of_major_vessels_colored_by_flourosopy {0.0,1.0,2.0,3.0}
+@attribute thal:_normal;_fixed_defect;_reversable_defect {3.0,6.0,7.0}
 @attribute heart_disease {1,2}
 
 @data
