@@ -10,12 +10,9 @@ class Converter():
         self.att = []
 
     def convert(self):
-        self.process_relation()
+        self.arff_relation()
         self.process_attributes()
         self.process_data()
-
-    def process_relation(self):
-        self.arff_relation()
 
     def process_attributes(self):
         with open(self.attribute_file) as f:
