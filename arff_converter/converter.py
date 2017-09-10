@@ -22,6 +22,7 @@ class Converter():
             for line in f:
                 line = line.split(',')
                 self.att.append(line)
+        self.trim_attributes()
         self.arff_attributes()
 
     def process_data(self):
@@ -38,7 +39,6 @@ class Converter():
 
     def arff_attributes(self):
         arff = open('data.arff', 'a')
-        self.trim_attributes()
         for r in range(len(self.att)):
             if self.att[r][1] == 'string' or self.att[r][1] == 'numeric':
                 arff.write("@attribute %s %s\n" % (self.att[r][0], self.att[r][1]))
