@@ -1,0 +1,11 @@
+@relation goes_here
+
+@attribute invoiceNo numeric
+@attribute StockCode string
+@attribute Description string
+@attribute Quantity numeric
+@attribute InvoiceDate mm/dd/yy HH:mm
+@attribute UnitPrice numeric
+@attribute CustomerID numeric
+@attribute Country string
+

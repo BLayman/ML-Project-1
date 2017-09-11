@@ -24,6 +24,7 @@ class Converter():
 
     def process_data(self):
         with open(self.data_file) as f:
+            f = unicode(f, errors='ignore')
             for line in f:
                 line = line.split(',')
                 if not len(line) > 1:
@@ -69,5 +70,5 @@ class Converter():
             self.att[r][0] = self.att[r][0].replace(" ", "_")
 
 if __name__ == "__main__":
-    converter = Converter('heart/heart_data.txt', 'heart/heart_att.txt')
+    converter = Converter('online_retail_data.csv', 'online_retail_att.csv')
     converter.convert()

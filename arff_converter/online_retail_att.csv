@@ -1,0 +1,8 @@
+"invoiceNo","numeric"
+"StockCode","string"
+"Description","string"
+"Quantity","numeric"
+"InvoiceDate,"mm/dd/yy HH:mm"
+"UnitPrice","numeric"
+"CustomerID","numeric"
+"Country","string"
