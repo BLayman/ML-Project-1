@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import codecs
 
 # class for converting .csv attribute and data files to a .arff file
 class Converter():
@@ -28,13 +29,18 @@ class Converter():
 
     # open input data file and append parsed data to self.data
     def process_data(self):
-        with open(self.data_file) as f:
-            for line in f:
-                line = line.split(',')
-                if not len(line) > 1:
-                    line = ''.join(line)
-                    line = line.split(' ')
-                self.data.append(line)
+        with codecs.open(self.data_file, "r", encoding='utf-8', errors='ignore') as f:
+            try:
+                for line in f:
+                    line = line.split(',')
+                    if not len(line) > 1:
+                        line = ''.join(line)
+                        line = line.split(' ')
+                    self.data.append(line)
+            except UnicodeDecodeError:
+                print(line)
+                print(self.data[len(self.data) - 1])
+                print(len(self.data))
         self.arff_data()
 
     # add relation line to arff output file
@@ -81,5 +87,5 @@ class Converter():
 
 # create instance of Converter class and run convert() method
 if __name__ == "__main__":
-    converter = Converter('heart/heart_data.txt', 'heart/heart_att.txt')
+    converter = Converter('online_retail_data.csv', 'online_retail_att.csv')
     converter.convert()
