@@ -87,5 +87,5 @@ class Converter():
 
 # create instance of Converter class and run convert() method
 if __name__ == "__main__":
-    converter = Converter('online_retail_data.csv', 'online_retail_att.csv')
+    converter = Converter('letter_recognition/letter_recognition_data.csv', 'letter_recognition/letter_recognition_att.csv')
     converter.convert()
