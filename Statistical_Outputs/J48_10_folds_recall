@@ -1,0 +1,23 @@
+Tester:     weka.experiment.PairedCorrectedTTester -G 4,5,6 -D 1 -R 2 -S 0.05 -result-matrix "weka.experiment.ResultMatrixPlainText -mean-prec 2 -stddev-prec 2 -col-name-width 0 -row-name-width 25 -mean-width 2 -stddev-width 2 -sig-width 1 -count-width 5 -print-col-names -print-row-names -enum-col-names"
+Analysing:  IR_recall
+Datasets:   5
+Resultsets: 1
+Confidence: 0.05 (two tailed)
+Sorted by:  -
+Date:       9/17/17 1:09 PM
+
+
+Dataset                   (1) trees.J48
+---------------------------------------
+fertility                (100)   0.97 |
+banknote                 (100)   0.99 |
+goes_here                (100)   0.82 |
+mushroom_toxicity        (100)   1.00 |
+sensor_readings          (100)   1.00 |
+---------------------------------------
+(v/ /*)                               |
+
+
+Key:
+(1) trees.J48 '-C 0.25 -M 2' -217733168393644444
+
